@@ -1,0 +1,43 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.mapboxgl-popup-content {
+  padding: 1;
+  line-height: 90%;
+  width: variable;
+  min-width: 100px;
+  border: 1px solid #000000;
+  /* this produces a 2-toned color border/outline*/
+  /*border: 2px solid #e71829;
+  outline: 1px solid #1823e7;*/
+  /* this sets the pop-up background color identical to the green map background */
+  background: #d3e6bc;
+
+  /* this makes the background transparent with no border, and box-shadow??? */
+  /*
+background: rgba(0, 1, 255, 0) !important;
+border: none !important;
+box-shadow: none !important;   */
+}
+
+/* This removes the triangle indicator/pointer attached to the box */
+.mapboxgl-popup-anchor-bottom > .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-left > .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-right > .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-left > .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-right > .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-left > .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-right > .mapboxgl-popup-tip {
+  border: none;
+}
+
+/*.mapboxgl-popup-anchor-top  { offset: [20,0]}*/
